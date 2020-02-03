@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="你到底懂不懂注音符號阿.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:你到底懂不懂注音符號阿"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="Question_TextBlock"  FontSize="180" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Name="Button01" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="12" Content="前一個" FontSize="32" Click="Button01_Click"/>
+            <Button Name="Button02" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="12" Content="看答案" FontSize="32" Grid.Column="1" Click="Button02_Click"/>
+            <Button Name="Button03" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="12" Content="下一個" FontSize="32" Grid.Column="2" Click="Button03_Click"/>
+        </Grid>
+    </Grid>
+</Page>
